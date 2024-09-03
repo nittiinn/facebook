@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #4267B2;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+            .nav-links li {
+                margin: 0 15px;
+            }
+
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+            }
+
+        .search-bar input {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            width: 200px;
+        }
+
+        .profile-menu a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        /* Main Layout */
+        main {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 0 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            flex: 2;
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 0 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #4267B2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .search-bar {
+                display: none;
+            }
+
+            .profile-menu {
+                display: none;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                margin: 0;
+            }
+
+            .content {
+                margin: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="#" class="logo">Facebook</a>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Friends</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Notifications</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Facebook">
+                </div>
+                <div class="profile-menu">
+                    <a href="#">Profile</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <aside class="sidebar">
+                <h2>Friends</h2>
+                <ul>
+                    <li><a href="#">Friend 1</a></li>
+                    <li><a href="#">Friend 2</a></li>
+                    <li><a href="#">Friend 3</a></li>
+                </ul>
+            </aside>
+            <section class="content">
+                <div class="post">
+                    <h3>John Doe</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="post">
+                    <h3>Jane Smith</h3>
+                    <p>Vestibulum vehicula orci vel leo suscipit, eget aliquam massa volutpat.</p>
+                </div>
+            </section>
+            <aside class="sidebar">
+                <h2>Pages</h2>
+                <ul>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Facebook Clone. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
